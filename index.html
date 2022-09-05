@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Temperature Hot</title>
+    <title>Weather API</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,16 +17,17 @@
     <main class="container">
         <form class="col-md-6 m-auto py-5">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <input id="search-field" type="text" class="form-control"
+                    placeholder="Enter a location for Weather ...">
                 <div class="input-group-append">
-                    <button type="button" class="btn btn-danger">Search</button>
+                    <button id="search-btn" type="button" class="btn btn-danger">Search</button>
                 </div>
             </div>
         </form>
         <div class="text-white text-center">
             <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
-            <h1>Dhaka</h1>
-            <h3><span>38.06</span>&deg;C</h3>
+            <h1 id="city-name">Dhaka</h1>
+            <h3><span id="city-temp">38.06</span>&deg;C</h3>
             <p class="fs-5 fw-bold">Clouds</p>
         </div>
     </main>
@@ -35,6 +36,8 @@
         <p class="mb-0">API from <a href="https://openweathermap.org/api" class="text-danger">Open Weather API</a></p>
         <p>Copyright © 2022 Golam Hasnain Soyad</p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
