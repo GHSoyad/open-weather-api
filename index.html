@@ -15,15 +15,25 @@
 
 <body>
     <main class="container">
+        <!-- Search section -->
         <div class="col-md-6 m-auto py-5">
             <div class="input-group mb-3">
                 <input id="search-field" type="text" class="form-control"
                     placeholder="Enter a location for Weather ...">
                 <div class="input-group-append">
-                    <button id="search-btn" type="button" class="btn btn-danger">Search</button>
+                    <button id="search-btn" type="button" class="btn btn-warning">Search</button>
                 </div>
             </div>
         </div>
+
+        <!-- Data loader -->
+        <div id="spinner" class="text-center d-none">
+            <div class="spinner-border text-warning" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <!-- Weather data -->
         <div class="text-white text-center">
             <div id="weather-icon">
             </div>
@@ -34,8 +44,9 @@
         </div>
     </main>
 
+    <!-- Footer -->
     <footer class="text-center text-white py-2">
-        <p class="mb-0">API from <a href="https://openweathermap.org/api" class="text-danger">Open Weather API</a></p>
+        <p class="mb-0">API from <a href="https://openweathermap.org/api" class="text-warning">Open Weather API</a></p>
         <p>Copyright © 2022 Golam Hasnain Soyad</p>
     </footer>
 
