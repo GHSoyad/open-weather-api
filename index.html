@@ -15,7 +15,7 @@
 
 <body>
     <main class="container">
-        <form class="col-md-6 m-auto py-5">
+        <div class="col-md-6 m-auto py-5">
             <div class="input-group mb-3">
                 <input id="search-field" type="text" class="form-control"
                     placeholder="Enter a location for Weather ...">
@@ -23,16 +23,18 @@
                     <button id="search-btn" type="button" class="btn btn-danger">Search</button>
                 </div>
             </div>
-        </form>
+        </div>
         <div class="text-white text-center">
-            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+            <div id="weather-icon">
+            </div>
             <h1 id="city-name">Dhaka</h1>
             <h3><span id="city-temp">38.06</span>&deg;C</h3>
-            <p class="fs-5 fw-bold">Clouds</p>
+            <div id="city-weather" class="fs-5 fw-bold mt-2">
+            </div>
         </div>
     </main>
 
-    <footer class="text-center text-white">
+    <footer class="text-center text-white py-2">
         <p class="mb-0">API from <a href="https://openweathermap.org/api" class="text-danger">Open Weather API</a></p>
         <p>Copyright © 2022 Golam Hasnain Soyad</p>
     </footer>
