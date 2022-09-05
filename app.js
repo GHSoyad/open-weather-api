@@ -43,3 +43,24 @@ const displayWeatherData = (city) => {
         weatherIcon.appendChild(img);
     });
 }
+
+const loadSearchData = () => {
+    const searchField = document.getElementById('search-field');
+    const searchFieldCity = searchField.value;
+
+    if (searchFieldCity === '') {
+        return alert('Please Enter a city name first!!')
+    }
+
+    loadWeatherData(searchFieldCity);
+}
+
+document.getElementById('search-btn').addEventListener('click', function () {
+    loadSearchData();
+})
+
+document.getElementById('search-field').addEventListener('keyup', function (e) {
+    if (e.key === 'Enter') {
+        loadSearchData();
+    }
+})
